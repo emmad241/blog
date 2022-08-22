@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<%- include('../partials/head'); %>
+	<head>
+		<link rel="stylesheet" href="/stylesheets/login.css" />
+	</head>
+	<body>
+		<%- include('../partials/header'); %>
+
+		<form action="/login/" class="login-form" method="post">
+			<div class="login-container">
+				<h1 class="login-title"><%= pageTitle %> here</h1>
+
+				<div class="username-form-row">
+					<label class="username-label" for="Username">Username:</label>
+					<div class="username-input-container">
+						<input required class="username-input" name="username" id="Title" />
+					</div>
+				</div>
+
+				<div class="password-form-row">
+					<label class="password-label" for="Password">Password:</label>
+					<div class="password-input-container">
+						<input
+							required
+							class="password-input"
+							name="password"
+							id="password"
+						/>
+					</div>
+				</div>
+
+				<div class="buttons-row">
+					<input type="submit" value="Login" class="login-btn button" />
+					<a class="cancel-btn button" href="/">Cancel</a>
+				</div>
+			</div>
+		</form>
+
+		<%- include('../partials/footer'); %>
+	</body>
+</html>

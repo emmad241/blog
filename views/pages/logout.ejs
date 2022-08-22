@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<%- include('../partials/head'); %>
+	<head>
+		<link rel="stylesheet" href="/stylesheets/logout.css" />
+	</head>
+	<body>
+		<%- include('../partials/header'); %>
+		<form class="logout-form" action="/logout/" method="post">
+			<div class="logout-container">
+				<h1 class="logout-title">Log out?</h1>
+				<div class="buttons-container">
+					<input type="submit" value="Logout" class="logout-btn button" />
+					<a class="cancel-btn button" href="/">Cancel</a>
+				</div>
+			</div>
+			<img src="/images/waves.gif" width="280" height="280" alt="simon" />
+		</form>
+
+		<%- include('../partials/footer'); %>
+	</body>
+</html>

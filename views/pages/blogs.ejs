@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<%- include('../partials/head'); %>
+	<head>
+		<link href="/stylesheets/style.css" rel="stylesheet" />
+	</head>
+	<body>	
+		<%- include('../partials/header'); %>
+		<div class="backdrop"></div>
+		<div class="modal">
+			<div class="cancel-container">
+				<a href="/blogs"><i class="fa fa-times cancel-button"></i></a>
+			</div>
+			<h2 class="modal__title">Create blog</h2>
+
+			<%- include('../pages/create'); %>
+		</div>
+		<section class="main-container">
+			<div class="blogs-container">
+				<div class="table-headings">
+					<div class="title-heading">Title</div>
+					<div class="author-heading">Author</div>
+					<div class="date-heading">Date</div>
+					<i class="add-btn fa-solid fa-plus"></i>
+				</div>
+				<hr />
+				<div class="blog-table">
+					<% blogs.forEach((blog) => { %>
+					<div class="blog-row">
+						<a class="blog-data" href="/blogs/view/<%= blog.blogid %>">
+							<p class="blog-title"><%= blog.title %></p>
+							<p><%= blog.creator %></p>
+							<p><%= blog.createDate %></p>
+						</a>
+						<div class="buttons-container">
+							<a
+								class="edit-btn"
+								href="/blogs/edit/<%= blog.blogid %>"
+								type="button"
+								><i class="fa-solid fa-pen-to-square"></i
+							></a>
+							<a
+								class="delete-btn"
+								href="/blogs/delete/<%= blog.blogid %>"
+								type="button"
+								><i class="fa-solid fa-trash"></i
+							></a>
+						</div>
+					</div>
+					<% }); %>
+				</div>
+			</div>
+		</section>
+		<script>
+			var backdrop = document.querySelector(".backdrop");
+			var addBtn = document.querySelector(".add-btn");
+			var modal = document.querySelector(".modal");
+			var noBtn = document.querySelector(".modal__action--negative");
+
+			addBtn.addEventListener("click", () => {
+				backdrop.style.display = "block";
+				modal.style.display = "block";
+			});
+
+			backdrop.addEventListener("click", () => {
+				backdrop.style.display = "none";
+				modal.style.display = "none";
+			});
+		</script>
+	</body>
+	<%- include('../partials/footer'); %>
+</html>

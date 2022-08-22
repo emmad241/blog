@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<%- include('../partials/head'); %>
+	<head>
+		<link rel="stylesheet" href="/stylesheets/registration.css" />
+	</head>
+	<body>
+		<%- include('../partials/header'); %>
+
+		<form action="/reg/" method="post" class="registration-form">
+			<div class="registration-container">
+				<h1 class="left white"><%= pageTitle %></h1>
+
+				<div class="username-form-row">
+					<label class="username-label" for="Username">Username:</label>
+					<div class="username-input-container">
+						<input required class="username-input" name="username" id="Title" />
+					</div>
+				</div>
+
+				<div class="password-form-row">
+					<label class="password-label" for="Password">Password:</label>
+					<div class="password-input-container">
+						<input
+							required
+							class="password-input"
+							name="password"
+							id="password"
+						/>
+					</div>
+				</div>
+
+				<div class="buttons-row">
+					<input
+						type="submit"
+						value="Register"
+						class="registration-btn button"
+					/>
+					<a class="cancel-btn button" href="/">Cancel</a>
+				</div>
+			</div>
+		</form>
+
+		<%- include('../partials/footer'); %>
+	</body>
+</html>

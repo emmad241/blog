@@ -1,0 +1,16 @@
+<script>
+	var hamburger = document.querySelector(".fa-bars");
+	var dropdown = document.querySelector(".dropdown__menu");
+
+	let isUp = true;
+	hamburger.addEventListener("click", function () {
+		console.log(`Menu clicked, isUp = ${isUp}`);
+		if (isUp) {
+			dropdown.style.display = "block";
+			isUp = false;
+		} else {
+			dropdown.style.display = "none";
+			isUp = true;
+		}
+	});
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<%- include('../partials/head'); %>
+	<body>
+		<%- include('../partials/header'); %>
+
+		<form action="/blogs/delete/<%= blog.blogid %>" method="post">
+			<div class="center-login">
+				<h1 class="white left">Delete blog?</h1>
+
+				<div class="form-group row">
+					<label class="col-form-label col-sm-2" for="Title">Title:</label>
+					<div class="col-sm-6">
+						<input
+							readonly
+							class="form-control"
+							id="Title"
+							value="<%= blog.title %>"
+						/>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label class="col-form-label col-sm-2" for="Content">Content:</label>
+					<div class="col-sm-6">
+						<textarea
+							readonly
+							class="form-control"
+							cols="20"
+							id="Content"
+							maxlength="32000"
+							rows="7"
+						>
+<%= blog.content %></textarea
+						>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label class="col-form-label col-sm-2"></label>
+					<div class="col-sm-3">
+						<input type="submit" value="Delete" class="btn btn-delete2" />
+						<a class="btn btn-outline-dark cancel" href="/blogs">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+	<%- include('../partials/footer'); %>
+</html>

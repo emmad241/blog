@@ -1,0 +1,80 @@
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.create-container{
+    width:70%;
+}
+
+.cancel-container{
+    padding-top:.5rem;
+    padding-right:1rem;
+}
+
+.title-row{
+    margin-top:3rem;
+}
+
+#Title{
+    font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+    width:30%;
+    font-size:24px;
+    word-wrap: break-word;
+	border-radius:4px;
+    resize: none;
+    outline: none;
+    border:none; 
+    padding-left:1.5rem;   
+    margin-top:1rem;
+}
+
+.content-row{
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.content-container{
+    height:450px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#Content{
+    font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+    font-size:1.3rem;
+    line-height: 1.7rem;
+	height:100%;
+    padding:1.5rem;
+    word-wrap: break-word;
+	border-radius:4px;
+    resize: none;
+    outline: none;
+    border:none;    
+    width:100%;
+}
+
+.button-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:1rem;
+}
+
+.save-btn{
+    font-size:28px;
+    border-radius:4px;
+    background-color: #222;
+    color:white;
+    width:300px;
+    height:50px;
+    cursor:pointer;
+}

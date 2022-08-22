@@ -1,0 +1,37 @@
+:root {
+	--image-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    --text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body{
+    background-image: url(/images/weight.jpg);
+}
+
+.help-container{
+    margin-top:7rem;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.help-container h1,
+.help-container h2{
+    color:white;
+}
+
+.simon{
+    margin-top:2rem;
+    border-radius:1rem;
+    transition-duration:3s;
+    width:300px;
+    height:300px;
+    box-shadow:var(--image-shadow);
+    filter:hue-rotate(400deg);
+    opacity:85%;
+}
+
+.simon:hover{
+    filter:hue-rotate(69deg);
+}

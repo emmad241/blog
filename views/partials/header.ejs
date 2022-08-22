@@ -1,0 +1,35 @@
+<nav class="main-header">
+	<i class="fa fa-bars" aria-hidden="true"></i>
+	<div class="dropdown__menu">
+		<li class="navbar-item">
+			<a class="navbar-link" href="/reg">Register</a>
+		</li>
+		<li class="navbar-item">
+			<a class="navbar-link" href="/login">Login</a>
+		</li>
+		<li class="navbar-item">
+			<a class="navbar-link" href="/logout">Logout</a>
+		</li>
+	</div>
+	<a class="navbar-brand" href="/">Home</a>
+	<!--
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    -->
+
+	<div class="navbar" id="navbarSupportedContent">
+		<ul class="navbar-items">
+			<li class="navbar-item">
+				<a class="navbar-link" href="/blogs">Blogs</a>
+			</li>
+			<li class="navbar-item">
+				<a class="navbar-link" href="/about">About</a>
+			</li>
+			<li class="navbar-item">
+				<a class="navbar-link" href="/help">Contact</a>
+			</li>
+		</ul>
+	</div>
+	<%- include('../partials/search'); %>
+</nav>

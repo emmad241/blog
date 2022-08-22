@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<%- include('../partials/head'); %>
+	<head>
+		<link rel="stylesheet" href="/stylesheets/create.css" />
+	</head>
+	<body>
+		<form action="/blogs/create/" method="post">
+			<div class="center">
+				<div class="create-container">
+					<div class="title-row">
+						<div>
+							<input name="title" id="Title" />
+						</div>
+					</div>
+
+					<div class="content-row">
+						<div class="content-container">
+							<textarea
+								cols="20"
+								name="content"
+								id="Content"
+								maxlength="32000"
+								rows="7"
+							></textarea>
+						</div>
+					</div>
+
+					<div class="button-row">
+						<div class="button-container">
+							<input type="submit" value="Save" class="save-btn" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

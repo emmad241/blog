@@ -1,0 +1,55 @@
+:root {
+	--textbox-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+body {
+	background-image: url(/images/weight.jpg);
+}
+
+*{
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.title {
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.blog-container {
+	font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+	display: flex;
+	justify-content: center;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	padding: 1.5rem;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 4px;
+	filter: none;
+    margin-top: 7rem;
+    box-shadow: var(--textbox-shadow);
+	word-wrap:break-word;
+	white-space: pre-wrap;
+
+}
+
+.text-container p {
+	margin: 0;
+	font-size: 1.3rem;
+	line-height: 1.7rem;
+	width:100%;
+}
+
+.text-container h1 {
+	font-weight: 500;
+	margin-top: 0;
+}

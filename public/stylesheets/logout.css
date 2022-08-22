@@ -1,0 +1,79 @@
+:root {
+	--textbox-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+body{
+    background-image: url(/images/weight.jpg);
+}
+
+.logout-form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:8rem;
+    gap:2rem;
+}
+
+.logout-container{
+    background: white;
+    border-radius:1rem;
+    padding:2rem 2rem 4rem 2rem;
+    flex-direction: column;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:50%;
+}
+
+.logout-title{
+    text-align:center;
+    font-size:3rem;
+    margin-top:0;
+    color:rgb(0, 0, 0);
+}
+
+.buttons-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+}
+
+
+.logout-btn:hover{
+    cursor:pointer;
+}
+
+
+.cancel-btn{
+    color:black;
+    font-size:1rem;
+    text-decoration: none;
+}
+
+
+.button {
+    font: bold 1.5rem Palatino;
+    text-decoration: none;
+    background-color: #3e196a;
+    color: #ffffff;
+    padding: 2px 6px 2px 6px;
+    border-radius:5px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    transition-duration:.5s;
+}
+
+.button:hover{
+    background-color: #1f0c36;
+    color:white;
+}
+
+img{
+    border-radius: 1rem;
+    width:35%;
+    height:28.1666666667%;
+}
