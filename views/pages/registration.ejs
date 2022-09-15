@@ -2,25 +2,25 @@
 <html>
 	<%- include('../partials/head'); %>
 	<head>
-		<link rel="stylesheet" href="/stylesheets/registration.css" />
+		<link href="/stylesheets/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<%- include('../partials/header'); %>
 
-		<form action="/reg/" method="post" class="registration-form">
-			<div class="registration-container">
-				<h1 class="left white"><%= pageTitle %></h1>
+		<form action="/reg/" method="post" class="input-form">
+			<div class="input-container">
+				<h1 class="input-title"><%= pageTitle %></h1>
 
-				<div class="username-form-row">
+				<div class="username-row">
 					<label class="username-label" for="Username">Username:</label>
-					<div class="username-input-container">
+					<div>
 						<input required class="username-input" name="username" id="Title" />
 					</div>
 				</div>
 
-				<div class="password-form-row">
+				<div class="password-row">
 					<label class="password-label" for="Password">Password:</label>
-					<div class="password-input-container">
+					<div>
 						<input
 							required
 							class="password-input"

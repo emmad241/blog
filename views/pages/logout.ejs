@@ -2,19 +2,19 @@
 <html>
 	<%- include('../partials/head'); %>
 	<head>
-		<link rel="stylesheet" href="/stylesheets/logout.css" />
+		<link rel="stylesheet" href="/stylesheets/style.css" />
 	</head>
 	<body>
 		<%- include('../partials/header'); %>
-		<form class="logout-form" action="/logout/" method="post">
-			<div class="logout-container">
-				<h1 class="logout-title">Log out?</h1>
+		<form class="input-form" action="/logout/" method="post">
+			<div class="input-container">
+				<h1 class="input-title">Log out?</h1>
 				<div class="buttons-container">
 					<input type="submit" value="Logout" class="logout-btn button" />
 					<a class="cancel-btn button" href="/">Cancel</a>
 				</div>
 			</div>
-			<img src="/images/waves.gif" width="280" height="280" alt="simon" />
+			<img src="/images/pikagoodbye.gif" width="400" height="280" class="logout-gif" alt="gif of pikachu waving goodbye" />
 		</form>
 
 		<%- include('../partials/footer'); %>

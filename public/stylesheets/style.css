@@ -757,6 +757,95 @@ footer {
     filter:hue-rotate(69deg);
 }
 
+/*Registration*/
+.input-form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+	flex-direction: column;
+    margin-top:8rem;
+}
+
+.input-container{
+    background:white;
+    border-radius:1rem;
+    padding:2rem;
+    flex-direction: column;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:50%;
+    box-shadow: var(--textbox-shadow);
+}
+
+.input-title{
+    font-size:4rem;
+    margin-top:0;
+}
+
+.username-row{
+    width:50%;
+    display:flex;
+    justify-content:space-between;
+    gap:2rem;
+}
+
+.username-input:focus{
+    outline: none;
+    outline-width: 0;
+}
+
+.password-row{
+    width:50%;
+    display:flex;
+    justify-content:space-between;
+    gap:2.7rem;
+}
+
+.password-input:focus{
+    outline: none;
+    outline-width: 0;
+}
+
+.buttons-row{
+    margin-top:2rem;
+    width:80%;
+    display:flex;
+    justify-content:center;
+    gap:2.7rem;
+}
+
+.cancel-btn{
+    font-size:1rem;
+    text-decoration: none;
+}
+
+.button {
+    font: bold 2rem Palatino;
+    text-decoration: none;
+    background-color: #3e196a;
+    color: #ffffff !important;
+    padding: 2px 6px 2px 6px;
+    border-radius:5px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    transition-duration:.5s;
+}
+
+.button:hover{
+    background-color: #1f0c36;
+    color:white;
+	cursor:pointer;
+}
+
+.logout-gif{
+	width:400; 
+	height:280;
+	border-radius: 4px;
+}
+
 /*Footer*/
 .footer{
     position: fixed;

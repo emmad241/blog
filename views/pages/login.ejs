@@ -2,25 +2,25 @@
 <html>
 	<%- include('../partials/head'); %>
 	<head>
-		<link rel="stylesheet" href="/stylesheets/login.css" />
+		<link rel="stylesheet" href="/stylesheets/style.css" />
 	</head>
 	<body>
 		<%- include('../partials/header'); %>
 
-		<form action="/login/" class="login-form" method="post">
-			<div class="login-container">
-				<h1 class="login-title"><%= pageTitle %> here</h1>
+		<form action="/login/" class="input-form" method="post">
+			<div class="input-container">
+				<h1 class="input-title"><%= pageTitle %> here</h1>
 
-				<div class="username-form-row">
+				<div class="username-row">
 					<label class="username-label" for="Username">Username:</label>
-					<div class="username-input-container">
+					<div>
 						<input required class="username-input" name="username" id="Title" />
 					</div>
 				</div>
 
-				<div class="password-form-row">
+				<div class="password-row">
 					<label class="password-label" for="Password">Password:</label>
-					<div class="password-input-container">
+					<div>
 						<input
 							required
 							class="password-input"
