@@ -18,34 +18,34 @@
 		<section class="main-container">
 			<div class="blogs-container">
 				<div class="table-headings">
-					<div class="title-heading">Title</div>
-					<div class="author-heading">Author</div>
-					<div class="date-heading">Date</div>
+					<div class="blog-heading">Title</div>
+					<div class="blog-heading">Author</div>
+					<div class="blog-heading">Date</div>
 					<i class="add-btn fa-solid fa-plus"></i>
 				</div>
-				<hr />
+				<hr class="table-rule"/>
 				<div class="blog-table">
 					<% blogs.forEach((blog) => { %>
 					<div class="blog-row">
 						<a class="blog-data" href="/blogs/view/<%= blog.blogid %>">
-							<p class="blog-title"><%= blog.title %></p>
-							<p><%= blog.creator %></p>
-							<p><%= blog.createDate %></p>
+							<div class="blog-title"><%= blog.title %></div>
+							<div class="blog-creator"><%= blog.creator %></div>
+							<div class="blog-date"><%= blog.createDate %></div>
+							<div class="buttons-container">
+								<a
+									class="edit-btn"
+									href="/blogs/edit/<%= blog.blogid %>"
+									type="button"
+									><i class="fa-solid fa-pen-to-square"></i
+								></a>
+								<a
+									class="delete-btn"
+									href="/blogs/delete/<%= blog.blogid %>"
+									type="button"
+									><i class="fa-solid fa-trash"></i
+								></a>
+							</div>
 						</a>
-						<div class="buttons-container">
-							<a
-								class="edit-btn"
-								href="/blogs/edit/<%= blog.blogid %>"
-								type="button"
-								><i class="fa-solid fa-pen-to-square"></i
-							></a>
-							<a
-								class="delete-btn"
-								href="/blogs/delete/<%= blog.blogid %>"
-								type="button"
-								><i class="fa-solid fa-trash"></i
-							></a>
-						</div>
 					</div>
 					<% }); %>
 				</div>

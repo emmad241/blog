@@ -45,7 +45,7 @@ hr {
 
 h1 {
 	font-size: 4.8rem;
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 }
 
 h2 {
@@ -242,9 +242,9 @@ footer {
 }
 
 .home-image{
-    margin: 7rem auto;
-    width: 350px;
-    height: 350px;
+    margin: 9rem auto;
+    width: 35rem;
+    height: 35rem;
     border-radius: 20px;
     box-shadow: var(--img-shadow);
     transition-duration: 2s;
@@ -491,6 +491,14 @@ footer {
 	color: white;
 }
 
+.table-rule{
+	width:90%;
+}
+
+.blog-heading{
+	width:25%;
+}
+
 .blog-table {
 	width: 90%;
 	display: flex;
@@ -499,7 +507,7 @@ footer {
 }
 
 .blog-row {
-	padding: 0rem 2rem;
+	padding: 2rem 2rem;
 	border-radius: 1rem;
 	width: 100%;
 	display: flex;
@@ -509,23 +517,31 @@ footer {
 	color: white;
 }
 
+.blog-row:hover {
+	background: #59259957;
+}
+
 .blog-data {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-right: 3rem;
 }
 
 .blog-title {
-	width: 35%;
+	width: 25%;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
 }
 
-.blog-row:hover {
-	background: #59259957;
+.blog-creator{
+	width: 25%;
+}
+
+.blog-date{
+	width: 25%;
+	text-align: center;
 }
 
 .buttons-container {
@@ -533,6 +549,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	gap: 1rem;
+	width:25%;
 }
 
 .backdrop {
@@ -654,6 +671,60 @@ footer {
 
 .about-image:hover{
     filter:hue-rotate(270deg);
+}
+
+.portfolio-link{
+	color:white;
+	padding: 1rem;
+	border: 2px solid white;
+	margin-top:5rem;	
+	transition-duration: .5s;
+}
+
+.portfolio-link:hover{
+	padding: 1rem 1.4rem;
+	background: #3e196a;
+}
+
+/*View*/
+.title {
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.blog-container {
+	font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+	display: flex;
+	justify-content: center;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	padding: 1.5rem;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 4px;
+	filter: none;
+    margin-top: 7rem;
+    box-shadow: var(--textbox-shadow);
+	word-wrap:break-word;
+	white-space: pre-wrap;
+
+}
+
+.text-container p {
+	margin: 0;
+	font-size: 2rem;
+	line-height: 3rem;
+	width:100%;
+}
+
+.text-container h1 {
+	font-weight: 500;
+	margin-top: 0;
 }
 
 /*Contact*/
